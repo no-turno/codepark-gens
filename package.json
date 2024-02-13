@@ -1,0 +1,41 @@
+{
+    "name": "@codepark/gens",
+    "type": "module",
+    "version": "0.0.1",
+    "private": true,
+    "files": [
+        "./types/**/*.d.ts",
+        "./lib/**/*.ts",
+        "./dist/**/*.js",
+        "./dist/**/*.d.ts"
+    ],
+    "scripts": {
+        "start": "bun run --watch lib/index.ts",
+        "build": "bun build ./lib/index.ts --outdir dist --format=esm --target=bun --external=node --external=bun --external=jquery"
+    },
+    "exports": {
+        ".": {
+            "import": "./dist/index.mjs",
+            "require": "./dist/index.cjs",
+            "types": "./dist/gens.d.ts"
+        }
+    },
+    "dependencies": {
+        "jquery": "beta",
+        "@sinclair/typebox": "latest",
+        "jsc": "latest",
+        "bun-cache": "1.0.5",
+        "@swc/core": "latest",
+        "core-js": "latest",
+        "xstate": "latest",
+        "@xstate/cli": "latest",
+        "xstate-ninja": "latest"
+    },
+    "devDependencies": {
+        "@types/bun": "latest",
+        "@types/systemjs": "latest",
+        "@types/wallabyjs": "latest",
+        "@types/node": "latest",
+        "@types/jquery": "latest"
+    }
+}

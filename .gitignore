@@ -1,0 +1,4 @@
+**/node_modules
+**/examples
+**/__tests__/*.d.ts
+**/.env*local
