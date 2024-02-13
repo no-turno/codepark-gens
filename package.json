@@ -21,21 +21,12 @@
         }
     },
     "dependencies": {
-        "jquery": "beta",
         "@sinclair/typebox": "latest",
-        "jsc": "latest",
-        "bun-cache": "1.0.5",
-        "@swc/core": "latest",
-        "core-js": "latest",
-        "xstate": "latest",
-        "@xstate/cli": "latest",
-        "xstate-ninja": "latest"
+        "@swc/core": "latest"
     },
     "devDependencies": {
         "@types/bun": "latest",
         "@types/systemjs": "latest",
-        "@types/wallabyjs": "latest",
-        "@types/node": "latest",
-        "@types/jquery": "latest"
+        "@types/node": "latest"
     }
 }
